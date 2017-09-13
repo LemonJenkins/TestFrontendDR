@@ -1,0 +1,42 @@
+<div class="box-right">
+  <div class="hadRight">
+    <div class="title">{{title}}</div>
+  </div>
+  <md-card class="card" *ngFor="let race of races">
+    <div class="hedOfCard" *ngIf="race.raceWasHeld" style="background-color: #C5CAE9">
+      Race number: {{race.raceId}}
+      <br>Data of race: {{dataOfRace}}
+      <br>Winner: {{race.winner}}
+    </div>
+    <div class="hedOfCard" *ngIf="!race.raceWasHeld">
+      Race number: {{race.raceId}}
+      <br>Data of race: {{dataOfRace}}
+      <br>Winner: {{race.winner}}
+    </div>
+    <div>
+      <div class="cardOfRacer" style="float:left;">
+        <p><i class="material-icons" style="color: #757575">account_box</i> Racer left: {{race.raceParticipantOne}}</p>
+        <p><i class="material-icons" style="color: #757575">directions_car</i> Car left: {{race.carRaceParticipantOne}}
+        </p>
+        <p><i class="material-icons" style="color: #757575">developer_mode</i> Model:
+          {{race.modelCarRaceParticipantOne}}</p>
+        <p><i class="material-icons" style="color: #757575">assessment</i> Horsepower:
+          {{race.horsePowerCarRaceParticipantOne}}</p>
+        <p><i class="material-icons" style="color: #757575">timer</i> Acceleration to 100km/h:
+          {{race.accelerationTo100CarRaceParticipantOne}}</p>
+      </div>
+      <div class="cardOfRacer" style="float:right;">
+        <p><i class="material-icons" style="color: #757575">account_box</i> Racer right: {{race.raceParticipantTwo}}</p>
+        <p><i class="material-icons" style="color: #757575">directions_car</i> Car right: {{race.carRaceParticipantTwo}}
+        </p>
+        <p><i class="material-icons" style="color: #757575">developer_mode</i> Model:
+          {{race.modelCarRaceParticipantTwo}}</p>
+        <p><i class="material-icons" style="color: #757575">assessment</i> Horsepower:
+          {{race.horsePowerCarRaceParticipantTwo}}</p>
+        <p><i class="material-icons" style="color: #757575">timer</i> Acceleration to 100km/h:
+          {{race.accelerationTo100CarRaceParticipantTwo}}</p>
+      </div>
+    </div>
+    <button md-button [disabled]="race.raceWasHeld" style="width:100%">Place bet</button>
+  </md-card>
+</div>

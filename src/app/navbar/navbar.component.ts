@@ -6,11 +6,11 @@ import { Component } from '@angular/core';
   styleUrls: ['navbar.component.css']
 })
 export class NavbarComponent {
-  nameButton1: string = 'Home'.toUpperCase();
-  nameButton2: string = 'RUNS'.toUpperCase();
-  nameButton3: string = 'Personal Area'.toUpperCase();
-  nameButton4: string = 'Rates'.toUpperCase();
-  nameButton5: string = 'registration'.toUpperCase();
-  nameButton6: string = 'login'.toUpperCase();
+  nameButtonHOME: string = 'Home'.toUpperCase();
+  nameButtonRUNS: string = 'Races'.toUpperCase();
+  nameButtonPersArea: string = 'Personal Area'.toUpperCase();
+  nameButtonRATE: string = 'Rate'.toUpperCase();
+  nameButtonREGISTR: string = 'registration'.toUpperCase();
+  nameButtonLOGIN: string = 'login'.toUpperCase();
 
 }

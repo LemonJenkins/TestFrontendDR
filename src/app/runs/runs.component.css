@@ -1,0 +1,56 @@
+.card {
+  margin: 3.5% 10% 4%;
+  height: 302px;
+}
+
+i {
+  vertical-align: text-bottom;
+}
+
+.hedOfCard {
+  color: aliceblue;
+  background-color: #8194ff;
+  padding: 1% 2% 1% 24px;
+}
+
+.cardOfRacer {
+  height: 100%;
+  width: 30%;
+  margin-left: 3%;
+  margin-right: 17%;
+
+}
+
+.box-right {
+  float: right;
+  height: 100%;
+  width: 79.9%;
+  padding-top: 0;
+  margin: 0 0 0 0%;
+  bottom: 0;
+  border-left: 1px solid #3f51b5;
+}
+
+.mat-card {
+  background-color: #f7f8ff;
+  padding-top: 0;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.md-form-field input:focus.ng-invalid.ng-dirty {
+  color: #dd0031;
+}
+
+.hadRight {
+  padding-left: 10%;
+  padding-top: 4%;
+  height: 67px;
+  color: aliceblue;
+  background-color: #3f51b5;
+}
+
+.title {
+  font-weight: 300;
+  font-size: 30px;
+}

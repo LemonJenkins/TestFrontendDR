@@ -7,13 +7,16 @@ import {MdButtonModule, MdCheckboxModule} from '@angular/material';
 import {MdAutocompleteModule} from '@angular/material';
 import {MdCardModule} from '@angular/material';
 import {RouterModule, Routes} from '@angular/router';
+import {MdInputModule} from '@angular/material';
+import { MdDatepickerModule, MdNativeDateModule} from '@angular/material';
+
 import {AppComponent} from './app.component';
 import {NavbarComponent} from './navbar/navbar.component';
 import {HomeComponent} from './home/home.component';
 import {RegistrationComponent} from './registration/registration.component';
-import {MdInputModule} from '@angular/material';
-import { MdDatepickerModule, MdNativeDateModule} from '@angular/material';
 import { LoginComponent} from './login/login.component';
+import { RunsComponent} from './runs/runs.component';
+import { RateComponent} from './rate/rate.component';
 
 
 const appRoutes: Routes = [
@@ -29,6 +32,14 @@ const appRoutes: Routes = [
     path: 'login',
     component: LoginComponent
   },
+  {
+    path: 'runs',
+    component: RunsComponent
+  },
+  {
+    path: 'rate',
+    component: RateComponent
+  },
 ];
 
 @NgModule({
@@ -37,7 +48,9 @@ const appRoutes: Routes = [
     NavbarComponent,
     HomeComponent,
     RegistrationComponent,
-    LoginComponent
+    LoginComponent,
+    RunsComponent,
+    RateComponent
 
   ],
   imports: [

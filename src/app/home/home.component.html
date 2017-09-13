@@ -3,22 +3,21 @@
     <div class="title">{{title}}</div>
   </div>
   <md-card class="card" *ngFor="let race of races">
-
     <div class="hedOfCard">
       Race number: {{race.raceId}}
       <br>Data of race: {{dataOfRace}}
     </div>
-<div>
-    <div class="cardOfRacer" style="float:left;">
-      <p><i class="material-icons" style="color: #757575">account_box</i> Racer left: {{race.raceParticipantOne}}</p>
-      <p><i class="material-icons" style="color: #757575">directions_car</i> Car left: {{race.carRaceParticipantOne}}</p>
+    <div>
+      <div class="cardOfRacer" style="float:left;">
+        <p><i class="material-icons" style="color: #757575">account_box</i> Racer left: {{race.raceParticipantOne}}</p>
+        <p><i class="material-icons" style="color: #757575">directions_car</i> Car left: {{race.carRaceParticipantOne}}
+        </p>
+      </div>
+      <div class="cardOfRacer" style="float:right;">
+        <p><i class="material-icons" style="color: #757575">account_box</i> Racer right: {{race.raceParticipantTwo}}</p>
+        <p><i class="material-icons" style="color: #757575">directions_car</i> Car right: {{race.carRaceParticipantTwo}}
+        </p>
+      </div>
     </div>
-    <div class="cardOfRacer" style="float:right;">
-      <p><i class="material-icons" style="color: #757575">account_box</i> Racer right: {{race.raceParticipantTwo}}</p>
-      <p><i class="material-icons" style="color: #757575">directions_car</i> Car right: {{race.carRaceParticipantTwo}}</p>
-    </div>
-</div>
-    <button md-button>Place bet</button>
   </md-card>
-
 </div>
