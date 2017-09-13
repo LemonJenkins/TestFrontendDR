@@ -8,7 +8,6 @@
   margin-left: 0%;
   bottom: 0px;
   border-left: 1px solid #3f51b5;
-  /*  box-shadow: -5px 9px 23px -12px #000000; */
 }
 
 .example-form {
@@ -20,11 +19,11 @@
 .example-full-width {
   width: 100%;
 }
-.regform{
+.login{
   margin-top:	3.5%;
   margin-right: 10%;
   margin-left: 10%;
-  padding-bottom: 8%;
+  padding-bottom: 50%;
 }
 
 .hadRigt{

@@ -1,0 +1,29 @@
+<div class="box-rigt">
+  <div class="hadRigt">
+    <div class="title">{{title}}</div>
+  </div>
+  <div class="login">
+    <form class="example-form" (submit)="login(nickname.value,password.value)">
+
+      <table class="example-full-width" cellspacing="0">
+        <tr>
+          <td>
+            <md-form-field class="example-full-width">
+              <input mdInput placeholder="Nickname" #nickname>
+            </md-form-field>
+          </td>
+          <td>
+            <md-form-field class="example-full-width">
+              <input mdInput placeholder="Password" #password>
+            </md-form-field>
+          </td>
+        </tr>
+      </table>
+      <p>
+        <button md-raised-button color="primary" type="submit">Login</button>
+      </p>
+
+    </form>
+
+  </div>
+</div>

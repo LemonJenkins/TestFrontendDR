@@ -1,0 +1,63 @@
+<div class="box-rigt">
+  <div class="hadRigt">
+  <div class="title">{{title}}</div>
+  </div>
+  <div class="regform">
+    <form class="example-form"
+          (submit)="registrationUser(name.value,surname.value,email.value,nickname.value,password1.value,password2.value,dateOfBirth.value)">
+
+      <table class="example-full-width" cellspacing="0">
+        <tr>
+          <td>
+            <md-form-field class="example-full-width">
+              <input mdInput placeholder="Name" #name>
+            </md-form-field>
+          </td>
+          <td>
+            <md-form-field class="example-full-width">
+              <input mdInput placeholder="Surname" #surname>
+            </md-form-field>
+          </td>
+        </tr>
+      </table>
+
+      <md-form-field class="example-full-width">
+        <input mdInput placeholder="Email" #email>
+      </md-form-field>
+
+      <md-form-field class="example-full-width">
+        <input mdInput placeholder="Nickname" #nickname>
+      </md-form-field>
+
+      <table class="example-full-width" cellspacing="0">
+        <tr>
+          <td>
+            <md-form-field class="example-full-width">
+              <input mdInput placeholder="Password" #password1>
+            </md-form-field>
+          </td>
+          <td>
+            <md-form-field class="example-full-width">
+              <input mdInput placeholder="Repeat password" #password2>
+            </md-form-field>
+          </td>
+        </tr>
+      </table>
+
+      <md-checkbox (click)="setOfHavingMachines()">Do you have a car?</md-checkbox>
+
+      <p>
+        <md-form-field>
+          <input mdInput [mdDatepicker]="picker" placeholder="Choose a date of birth" #dateOfBirth>
+          <md-datepicker-toggle mdSuffix [for]="picker"></md-datepicker-toggle>
+          <md-datepicker #picker></md-datepicker>
+        </md-form-field>
+      </p>
+      <p>
+        <button md-raised-button color="primary" type="submit">Registration</button>
+      </p>
+
+    </form>
+
+  </div>
+</div>

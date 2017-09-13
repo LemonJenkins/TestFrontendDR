@@ -1,63 +1,63 @@
-
-.box{
-  text-align: center;
+.card {
+  margin-top: 3.5%;
+  margin-right: 10%;
+  margin-bottom: 4%;
+  margin-left: 10%;
+  height: 170px;
 }
 
-.box-left {
-  float: left;
-  width: 20%; /* Ширина блока */
+i {
+  vertical-align: text-bottom;
+}
+
+.hedOfCard {
+  color: aliceblue;
+  background-color: #8194ff;
+  padding: 1% 2% 1% 24px;
+}
+
+.cardOfRacer {
   height: 100%;
-  padding: 0px; /* Поля */
-  margin-top: 0px;
-  margin-right: 0px;
-  margin-bottom: 0px;
-  margin-left: 0px;
+  width: 30%;
+  margin-left: 3%;
+  margin-right: 17%;
+
 }
 
 .box-rigt {
   float: right;
-  height:100% ;
-  width: 79.9% ;
+  height: 100%;
+  width: 79.9%;
+  padding-top: 0;
   margin-top: 0px;
   margin-right: 0px;
   margin-bottom: 0px;
   margin-left: 0%;
   bottom: 0px;
   border-left: 1px solid #3f51b5;
-  box-shadow: -5px 9px 23px -12px #000000;
+  /*  box-shadow: -5px 9px 23px -12px #000000; */
 }
 
-.logo{
-  box-shadow: 0 0 15px rgba(0,0,0,0.5);
-  text-align: center;
-  background-color: #3f51b5;
-  height: 100px;
-  width: 100% ;
-  margin: auto;
+.mat-card {
+  background-color: #f7f8ff;
+  padding-top: 0;
+  padding-left: 0;
+  padding-right: 0;
 }
 
-.my-butone{
-
-  height: 40px;
-  width: 100% ;
+.md-form-field input:focus.ng-invalid.ng-dirty {
+  color: #dd0031;
 }
 
-
-
-.todo{
-  margin-top:	3.5%;
-  margin-right: 10%;
-  margin-bottom: 4%;
-  margin-left: 10%;
-}
-
-.fontHadStyle{
-  padding-top: 20px;
-  padding-left: 3%;
-  height: 100px;
+.hadRigt {
+  padding-left: 10%;
+  padding-top: 4%;
+  height: 67px;
   color: aliceblue;
   background-color: #3f51b5;
+}
+
+.title {
   font-weight: 300;
   font-size: 30px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.5);
 }

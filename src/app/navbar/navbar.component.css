@@ -1,0 +1,10 @@
+.my-button{
+  height: 40px;
+  width: 100%;
+}
+.mat-button, .mat-fab, .mat-icon-button, .mat-mini-fab, .mat-raised-button{
+  padding-top: 0px;
+  padding-right: 84%;
+  padding-bottom: 0px;
+  padding-left: 16%;
+}
