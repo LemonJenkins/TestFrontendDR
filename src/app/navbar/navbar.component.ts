@@ -8,7 +8,6 @@ import { Component } from '@angular/core';
 export class NavbarComponent {
   nameButtonHOME: string = 'Home'.toUpperCase();
   nameButtonRUNS: string = 'Races'.toUpperCase();
-  nameButtonPersArea: string = 'Personal Area'.toUpperCase();
   nameButtonRATE: string = 'Rate'.toUpperCase();
   nameButtonREGISTR: string = 'registration'.toUpperCase();
   nameButtonLOGIN: string = 'login'.toUpperCase();

@@ -1,44 +1,43 @@
 <div class="box-right">
   <div class="hadRight">
-  <div class="title">{{title}}</div>
+    <div class="title">{{title}}</div>
   </div>
   <div class="regform">
-    <form class="example-form"
-          (submit)="registrationUser(name.value,surname.value,email.value,nickname.value,password1.value,password2.value,dateOfBirth.value)">
+    <form class="example-form" #ragForm="ngForm" novalidate (ngSubmit)="registrationUser(ragForm, bData)">
 
       <table class="example-full-width" cellspacing="0">
         <tr>
           <td>
             <md-form-field class="example-full-width">
-              <input mdInput placeholder="Name" #name>
+              <input mdInput placeholder="Name" name="name" [(ngModel)]="name" required>
             </md-form-field>
           </td>
           <td>
             <md-form-field class="example-full-width">
-              <input mdInput placeholder="Surname" #surname>
+              <input mdInput placeholder="Surname" name="surname" ngModel required>
             </md-form-field>
           </td>
         </tr>
       </table>
 
       <md-form-field class="example-full-width">
-        <input mdInput placeholder="Email" #email>
+        <input mdInput placeholder="Email" type="email" name="email" [(ngModel)]="email" required email>
       </md-form-field>
 
       <md-form-field class="example-full-width">
-        <input mdInput placeholder="Nickname" #nickname>
+        <input mdInput placeholder="Nickname" name="nickname" ngModel required>
       </md-form-field>
 
       <table class="example-full-width" cellspacing="0">
         <tr>
           <td>
             <md-form-field class="example-full-width">
-              <input mdInput placeholder="Password" #password1>
+              <input mdInput placeholder="Password" name="password" ngModel required>
             </md-form-field>
           </td>
           <td>
             <md-form-field class="example-full-width">
-              <input mdInput placeholder="Repeat password" #password2>
+              <input mdInput placeholder="Repeat password" name="repeatPass" ngModel required>
             </md-form-field>
           </td>
         </tr>
@@ -46,16 +45,17 @@
 
       <md-checkbox (click)="setOfHavingMachines()">Do you have a car?</md-checkbox>
 
-      <p>
-        <md-form-field>
-          <input mdInput [mdDatepicker]="picker" placeholder="Choose a date of birth" #dateOfBirth>
-          <md-datepicker-toggle mdSuffix [for]="picker"></md-datepicker-toggle>
-          <md-datepicker #picker></md-datepicker>
-        </md-form-field>
-      </p>
-      <p>
-        <button md-raised-button color="primary" type="submit">Registration</button>
-      </p>
+    <p>
+      <md-form-field>
+        <input mdInput [mdDatepicker]="picker" placeholder="Choose a date of birth" #bData>
+        <md-datepicker-toggle mdSuffix [for]="picker"></md-datepicker-toggle>
+        <md-datepicker #picker></md-datepicker>
+      </md-form-field>
+    </p>
+
+    <p>
+      <button md-raised-button color="primary" type="submit" [disabled]="ragForm.invalid">Registration</button>
+    </p>
 
     </form>
 

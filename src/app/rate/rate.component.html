@@ -3,18 +3,18 @@
     <div class="title">{{title}}</div>
   </div>
   <div class="regform">
-    <form class="example-form" #rateForm ="ngForm">
+    <form class="example-form" #rateForm ="ngForm" novalidate (ngSubmit)="addRate(rateForm)">
 
       <table class="example-full-width" cellspacing="0">
         <tr>
           <td>
             <md-form-field class="example-full-width">
-              <input mdInput placeholder="Name" #name>
+              <input mdInput placeholder="Name" name="name" [(ngModel)]="name" required>
             </md-form-field>
           </td>
           <td>
             <md-form-field class="example-full-width">
-              <input mdInput placeholder="Email" #email>
+              <input mdInput placeholder="Email" type="email" name="email" [(ngModel)]="email" required email>
             </md-form-field>
           </td>
         </tr>
@@ -24,24 +24,23 @@
         <tr>
           <td>
             <md-form-field class="example-full-width">
-              <input mdInput placeholder="Race number">
+              <input mdInput placeholder="Race number" name="raceNumber" ngModel required>
             </md-form-field>
           </td>
           <td>
             <md-form-field class="example-full-width">
-              <input mdInput placeholder="Name of racer" #email>
+              <input mdInput placeholder="Racer ID" name="raceId" ngModel required>
             </md-form-field>
           </td>
         </tr>
       </table>
       <md-form-field class="example-full-width">
-        <input mdInput placeholder="Rate" #name>
+        <input mdInput placeholder="Rate" name="rate" ngModel required pattern="[0-9]{1,2,3}">
       </md-form-field>
 
       <p>
-        <button md-raised-button color="primary" type="submit">BET</button>
+        <button md-raised-button color="primary" type="submit" [disabled]="rateForm.invalid">BET</button>
       </p>
-
     </form>
 
   </div>

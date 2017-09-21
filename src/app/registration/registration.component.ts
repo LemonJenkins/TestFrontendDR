@@ -1,4 +1,6 @@
 import {Component} from '@angular/core';
+import {NgForm} from "@angular/forms";
+import {Data} from "@angular/router";
 
 @Component({
   selector: 'registration',
@@ -14,16 +16,11 @@ export class RegistrationComponent {
     this.haveACars = !this.haveACars;
   }
 
-  registrationUser(name: string, surname: string, email: string, nickname: string, password1: string, password2: string, dateOfBirth: any) {
-    let names: string = name;
-    let surnames: string = surname;
-    let emails: string = email;
-    let nicknames: string = nickname;
-    let password1s: string = password1;
-    let password2s: string = password2;
-    let date = dateOfBirth;
+  registrationUser(form: NgForm, data: any) {
 
-    console.log(names, surnames, emails, nicknames, password1s, password2s, this.haveACars, date);
+    console.log(form);
+    console.log(this.haveACars);
+    console.log(data);
   }
 
 }
