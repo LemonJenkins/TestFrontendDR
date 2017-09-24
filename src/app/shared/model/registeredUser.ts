@@ -11,12 +11,12 @@ export class RegisteredUser {
 
   age: number;
 
-  pass: srtring;
+  pass: string;
 
   email: string;
 
 
-  constructor(id: number, name: string, surname: string, nickname: string, availabilityMachine: boolean, age: number, pass: srtring, email: string) {
+  constructor(id: number, name: string, surname: string, nickname: string, availabilityMachine: boolean, age: number, pass: string, email: string) {
     this.id = id;
     this.name = name;
     this.surname = surname;

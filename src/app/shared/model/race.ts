@@ -1,5 +1,5 @@
-import {Data} from "@angular/router";
 import {RacePaticipant} from "./raceParticipant";
+import {Data} from "@angular/router";
 
 export class Race {
 
@@ -7,11 +7,11 @@ export class Race {
 
   checkinTime: Data;
 
-  raceParticipantOne: RaceParticipant;
+  raceParticipantOne: RacePaticipant;
 
-  raceParticipantTwo: RaceParticipant;
+  raceParticipantTwo: RacePaticipant;
 
-  winner: RaceParticipant;
+  winner: RacePaticipant;
 
   raceWasHeld: boolean;
 

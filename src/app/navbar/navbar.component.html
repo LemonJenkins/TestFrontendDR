@@ -1,31 +1,8 @@
-<div>
-  <button md-button color="primary" class="my-button" onClick='location.href="/"'>
-    <i class="material-icons md-18 mat-button-wrapper">home</i>
-    {{ nameButtonHOME }}
+<div *ngFor="let buttonn of buttons">
+  <a href="{{buttonn.href}}">
+  <button md-button color="primary" class="my-button" type="submit" >
+    <i class="material-icons">{{buttonn.icon}}</i>
+    {{ buttonn.title }}
   </button>
-</div>
-<div>
-
-  <button md-button color="primary" class="my-button" onClick='location.href="/runs"'>
-    <i class="material-icons md-18">directions_car</i>
-    {{ nameButtonRUNS }}
-  </button>
-</div>
-<div>
-  <button md-button color="primary" class="my-button" onClick='location.href="/rate"'>
-    <i class="material-icons md-18">attach_money</i>
-    {{ nameButtonRATE }}
-  </button>
-</div>
-<div>
-  <button md-button color="primary" class="my-button" onClick='location.href="/registration"'>
-    <i class="material-icons">accessibility</i>
-    {{ nameButtonREGISTR }}
-  </button>
-</div>
-<div>
-  <button md-button color="primary" class="my-button" onClick='location.href="/login"'>
-    <i class="material-icons">input</i>
-    {{ nameButtonLOGIN }}
-  </button>
+  </a>
 </div>

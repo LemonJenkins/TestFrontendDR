@@ -17,6 +17,7 @@ import {RegistrationComponent} from './registration/registration.component';
 import { LoginComponent} from './login/login.component';
 import { RunsComponent} from './runs/runs.component';
 import { RateComponent} from './rate/rate.component';
+import { AddRaceComponent } from './addRace/addRace.component';
 
 
 const appRoutes: Routes = [
@@ -40,6 +41,10 @@ const appRoutes: Routes = [
     path: 'rate',
     component: RateComponent
   },
+  {
+    path: 'addRace',
+    component: AddRaceComponent
+  },
 ];
 
 @NgModule({
@@ -50,7 +55,8 @@ const appRoutes: Routes = [
     RegistrationComponent,
     LoginComponent,
     RunsComponent,
-    RateComponent
+    RateComponent,
+    AddRaceComponent
 
   ],
   imports: [

@@ -1,0 +1,132 @@
+<div class="box-right">
+  <div class="hadRight">
+    <div class="title">{{title}}</div>
+  </div>
+  <div class="addRaceForm">
+    <form class="example-form" #ragForm="ngForm" novalidate (ngSubmit)="registrationUser(ragForm, bData)">
+
+      <table class="example-full-width" cellspacing="0">
+        <tr>
+          <td>
+            <md-form-field class="example-full-width">
+              <input mdInput [mdDatepicker]="picker" placeholder="Choose a date of race">
+              <md-datepicker-toggle mdSuffix [for]="picker"></md-datepicker-toggle>
+              <md-datepicker #picker></md-datepicker>
+            </md-form-field>
+          </td>
+      </table>
+
+      <h2>RaceParticipantOne</h2>
+
+      <table class="example-full-width" cellspacing="0">
+        <tr>
+          <td>
+            <md-form-field class="example-full-width">
+              <input mdInput placeholder="Id Race Participant One" name="idRaceParticipantOne" ngModel required>
+            </md-form-field>
+          </td>
+          <td>
+            <md-form-field class="example-full-width">
+              <input mdInput placeholder="Driving Experience" name="drivingExperienceRacerOne" ngModel required>
+            </md-form-field>
+          </td>
+        </tr>
+      </table>
+
+      <h2>Car Racer One</h2>
+
+      <table class="example-full-width" cellspacing="0">
+        <tr>
+          <td>
+            <md-form-field class="example-full-width">
+              <input mdInput placeholder="Mark" name="markRacerOne" ngModel required>
+            </md-form-field>
+          </td>
+          <td>
+            <md-form-field class="example-full-width">
+              <input mdInput placeholder="Model" name="modelRacerOne" ngModel required>
+            </md-form-field>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <md-form-field class="example-full-width">
+              <input mdInput placeholder="Horse Power" name="horsePowerRacerOne" ngModel required>
+            </md-form-field>
+          </td>
+          <td>
+            <md-form-field class="example-full-width">
+              <input mdInput placeholder="Acceleration To 100km/h" name="accelerationTo100RacerOne" ngModel required>
+            </md-form-field>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <md-form-field class="example-full-width">
+              <input mdInput placeholder="Max Speed km/h" name="maxSpeedRacerOne" ngModel required>
+            </md-form-field>
+          </td>
+        </tr>
+      </table>
+
+      <h2>RaceParticipantTwo</h2>
+
+      <table class="example-full-width" cellspacing="0">
+        <tr>
+          <td>
+            <md-form-field class="example-full-width">
+              <input mdInput placeholder="Id Race Participant One" name="idRaceParticipantTwo" ngModel required>
+            </md-form-field>
+          </td>
+          <td>
+            <md-form-field class="example-full-width">
+              <input mdInput placeholder="Driving Experience" name="drivingExperienceRacerTwo" ngModel required>
+            </md-form-field>
+          </td>
+        </tr>
+      </table>
+
+      <h2>Car Racer Two</h2>
+
+      <table class="example-full-width" cellspacing="0">
+        <tr>
+          <td>
+            <md-form-field class="example-full-width">
+              <input mdInput placeholder="Mark" name="markRacerTwo" ngModel required>
+            </md-form-field>
+          </td>
+          <td>
+            <md-form-field class="example-full-width">
+              <input mdInput placeholder="Model" name="modelRacerTwo" ngModel required>
+            </md-form-field>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <md-form-field class="example-full-width">
+              <input mdInput placeholder="Horse Power" name="horsePowerRacerTwo" ngModel required>
+            </md-form-field>
+          </td>
+          <td>
+            <md-form-field class="example-full-width">
+              <input mdInput placeholder="Acceleration To 100km/h" name="accelerationTo100RacerTwo" ngModel required>
+            </md-form-field>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <md-form-field class="example-full-width">
+              <input mdInput placeholder="Max Speed km/h" name="maxSpeedRacerTwo" ngModel required>
+            </md-form-field>
+          </td>
+        </tr>
+      </table>
+
+      <p>
+        <button md-raised-button color="primary" type="submit" [disabled]="ragForm.invalid">Registration</button>
+      </p>
+
+    </form>
+
+  </div>
+</div>

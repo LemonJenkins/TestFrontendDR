@@ -7,16 +7,17 @@ export class RacePaticipant {
 
   registeredUser: RegisteredUser;
 
-  DrivingExpiriens: number;
+  drivingExperienec: number;
 
   car: Car;
 
   race: Race;
 
-  constructor(id: number, registeredUser: RegisteredUser, DrivingExpiriens: number, car: Car, race: Race) {
+
+  constructor(id: number, registeredUser: RegisteredUser, drivingExperienec: number, car: Car, race: Race) {
     this.id = id;
     this.registeredUser = registeredUser;
-    this.DrivingExpiriens = DrivingExpiriens;
+    this.drivingExperienec = drivingExperienec;
     this.car = car;
     this.race = race;
   }

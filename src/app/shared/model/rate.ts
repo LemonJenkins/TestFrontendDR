@@ -2,7 +2,7 @@ import {RegisteredUser} from "./registeredUser";
 import {Race} from "./race";
 import {RacePaticipant} from "./raceParticipant";
 
-export class Race {
+export class Rate {
   id: number;
 
   registeredUser: RegisteredUser;
@@ -11,11 +11,11 @@ export class Race {
 
   race: Race;
 
-  raceParticipant: RaceParticipant;
+  raceParticipant: RacePaticipant;
 
   win: boolean;
 
-  constructor(id: number, registeredUser: RegisteredUser, rate: number, race: Race, raceParticipant: RaceParticipant, win: boolean) {
+  constructor(id: number, registeredUser: RegisteredUser, rate: number, race: Race, raceParticipant: RacePaticipant, win: boolean) {
     this.id = id;
     this.registeredUser = registeredUser;
     this.rate = rate;
